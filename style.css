@@ -1,4 +1,3 @@
-/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 /* toto je černá magie, na kterou nešahej! */
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
@@ -14,8 +13,113 @@ tlačítko facebook         #3b5998
 tlačítko twitter          #1da1f2
 */
 
-
 body {
   background-color: #bdc3c7;
+  width:370px;
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 1.5;
+  margin: 40px 70% 50px 40px;
+  box-shadow: 2px 8px 10px;
 }
 
+.obsah {
+    margin: 0 0 0 30px;
+ }
+
+.profil {
+    background-color: #31363b;
+    color: #bdc3c7;
+    font-size: 18px;
+}
+
+.hlavicka{
+    position: relative;
+ }
+
+.foto { 
+    width:100%;
+    margin: 0 0 0 0;
+}
+
+.logo {
+    bottom:-20px;
+    right: 20px;
+    margin: 0 35px 0 0 ;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #b92e81;
+}
+
+.jmeno {
+    color: white;
+    padding:0 0 0 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.odkazy{
+    margin: 0 0 0 -40px;
+}
+
+.odkazy li{
+    display: inline-block;
+}
+
+.portfolio {
+    border-top: 1px solid #3f464d;
+    text-align: center;
+    font-weight:bold;
+    text-decoration:none;
+    width: 100%;
+    padding:0;
+}
+
+.portfolio a {
+    text-decoration:none;
+    text-transform: uppercase;
+    width: 100%;
+    color: #bdc3c7;
+    display: block;
+    padding:8px;
+}
+
+.facebook {
+    border-top: 1px solid #3f464d;
+    text-align: center;
+    font-weight:bold;
+    padding:0;
+    text-decoration:none;
+    width: 50%;
+    padding:8px 0;
+} 
+
+.facebook a{
+    text-transform: uppercase;
+    padding:10px 50px;
+    text-decoration:none;
+    width: 50%;
+    color: #bdc3c7;
+} 
+
+.twitter {
+    border-top: 1px solid #3f464d;
+    text-align: center;
+    background-color: #1da1f2;
+    padding:8px 0;
+    width: 50%;
+    display: block;
+}
+
+.twitter a{
+    text-transform: uppercase;
+    font-weight:bold;
+    padding:10px 58px;
+    text-decoration:none;
+    width: 50%;
+    color: #bdc3c7;
+}
+
+.odkazy a:hover, 
+.odkazy a:focus,
+.odkazy a:active {
+    background-color:#313235;
+}
